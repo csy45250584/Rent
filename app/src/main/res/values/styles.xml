@@ -1,0 +1,57 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:actionMenuTextColor">@android:color/white</item>
+    </style>
+    <style name="MyRippleWaveStyle" parent="Material.Drawable.Ripple.Wave">
+        <item name="rd_rippleAnimDuration">300</item>
+        <item name="rd_rippleColor">@color/colorRipple</item>
+        <item name="rd_delayClick">none</item>
+    </style>
+    <style name="MyColorRippleWaveStyle" parent="Material.Drawable.Ripple.Wave">
+        <item name="rd_rippleAnimDuration">300</item>
+        <item name="rd_rippleColor">@color/colorColorRipple</item>
+        <item name="rd_delayClick">none</item>
+    </style>
+    <style name="CornersButtonStyle" parent="MyRippleWaveStyle">
+        <item name="rd_cornerRadius">@dimen/button_corners</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Button</item>
+    </style>
+    <style name="NoCornerButtonStyle" parent="MyRippleWaveStyle">
+        <item name="rd_cornerRadius">@dimen/dp_0</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Button</item>
+    </style>
+    <style name="BottomSheetDialog">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="bsd_inDuration">100</item>
+        <item name="bsd_outDuration">100</item>
+        <item name="bsd_cancelable">true</item>
+        <item name="bsd_canceledOnTouchOutside">true</item>
+        <item name="bsd_dimAmount">0.5</item>
+    </style>
+    <style name="MaterialSearchViewStyle">
+        <!-- Background for the search bar -->
+        <item name="searchBackground">@color/colorPrimary</item>
+        <!-- Change clear text icon -->
+        <item name="searchCloseIcon">@drawable/ic_action_navigation_close_inverted</item>
+        <!-- Change up icon -->
+        <item name="searchBackIcon">@drawable/ic_action_navigation_arrow_back_inverted</item>
+        <!-- Change icon for the suggestions -->
+        <item name="searchSuggestionIcon">@drawable/ic_suggestion</item>
+        <!-- Change background for the suggestions list view -->
+        <item name="searchSuggestionBackground">@android:color/white</item>
+        <!-- Change text color for edit text. This will also be the color of the cursor -->
+        <item name="android:textColor">@color/colorWhite</item>
+        <!-- Change hint text color for edit text -->
+        <item name="android:textColorHint">@color/color50White</item>
+        <!-- Hint for edit text -->
+        <item name="android:hint">@string/search_hint</item>
+        <item name="colorControlActivated">@color/colorWhite</item>
+    </style>
+</resources>
