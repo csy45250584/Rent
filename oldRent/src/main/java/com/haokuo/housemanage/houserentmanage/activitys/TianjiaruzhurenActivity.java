@@ -1,0 +1,16 @@
+package com.haokuo.housemanage.houserentmanage.activitys;
+
+import android.app.Activity;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+import com.haokuo.housemanage.houserentmanage.R;
+
+public class TianjiaruzhurenActivity extends Activity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_tianjiaruzhuren);
+    }
+}

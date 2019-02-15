@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/halfalpha"
+    android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        >
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="261dp"
+            android:background="@color/colorWhite"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radbtn_buxian"
+                style="@style/Radiopaixu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_12"
+                android:text="@string/buxian" />
+
+            <RadioButton
+                android:id="@+id/radbtn_1000"
+                style="@style/Radiopaixu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_1000" />
+
+            <RadioButton
+                android:id="@+id/radbtn_1000_1500"
+                style="@style/Radiopaixu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_1000_1055" />
+
+            <RadioButton
+
+                android:id="@+id/radbtn_1500_2000"
+                style="@style/Radiopaixu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_1500_2000" />
+
+            <RadioButton
+                android:id="@+id/radbtn_2000_2500"
+                style="@style/Radiopaixu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_2000_2500" />
+
+            <RadioButton
+                android:id="@+id/radbtn_2500_3000"
+                style="@style/Radiopaixu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_16"
+                android:text="@string/_2500_3000" />
+
+        </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/colorShouye"
+        android:layout_marginRight="@dimen/dp_12"
+        android:layout_marginLeft="@dimen/dp_12"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            >
+            <TextView
+                android:id="@+id/txt_zujin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1000元以下"
+                android:textColor="@color/colorJuse"
+                android:textSize="@dimen/sp_16"
+                android:layout_marginTop="@dimen/dp_18"
+                />
+        </RelativeLayout>
+
+
+        <com.haokuo.housemanage.houserentmanage.touchprogressview.widget.TouchProgressView
+            android:id="@+id/proview_price"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/dp_18"
+            android:layout_marginRight="@dimen/dp_18"
+            android:layout_height="@dimen/dp_20" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="151dp"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dp_20"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingRight="@dimen/dp_12"
+        android:paddingTop="@dimen/dp_55">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_6"
+            android:layout_weight="1"
+            android:background="@drawable/shape_btnchongzhi"
+            android:text="@string/chongzhi"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/sp_16"
+
+            />
+
+        <Button
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_marginRight="@dimen/dp_6"
+            android:layout_weight="2"
+            android:background="@drawable/shape_btnqueding"
+            android:text="@string/queren"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/sp_16"
+
+            />
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

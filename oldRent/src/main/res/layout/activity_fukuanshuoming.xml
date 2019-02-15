@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:gravity="center_horizontal">
+
+    <RelativeLayout
+        android:id="@+id/title_fukaunfangshi"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        >
+        <RelativeLayout
+            android:id="@+id/Realtive_fukuanfangshituichu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dp_12">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/jq"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+
+                android:layout_below="@+id/title_fukaunfangshi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:orientation="horizontal"
+                    >
+
+                    <RelativeLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txt_querenweizhi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/fukaunfangshi"
+                            android:textColor="@color/colorTextBlack"
+                            android:layout_margin="@dimen/dp_12"
+                            android:textSize="@dimen/sp_25"
+                            />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:background="@color/colorWhite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@color/colorWhite"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+
+
+                    <RelativeLayout
+                        android:orientation="vertical"
+                        android:background="@color/colorWhite"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txt_yuefu"
+                            android:layout_marginTop="@dimen/dp_12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/yuefu"
+                            android:textSize="@dimen/sp_18"
+                            android:textColor="@color/colorContent"
+                            android:layout_marginLeft="@dimen/dp_12"
+                            android:layout_marginBottom="@dimen/dp_6"
+                            />
+
+                        <TextView
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/dp_12"
+                            android:layout_marginTop="@dimen/dp_12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="￥2000元/月"
+                            android:textSize="@dimen/sp_16"
+                            android:textColor="@color/colorContent"
+                            />
+
+                        <TextView
+                            android:layout_below="@+id/txt_yuefu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="押金： ￥2000元"
+                            android:textSize="@dimen/sp_16"
+                            android:textColor="@color/colorTextGrey"
+                            android:layout_marginTop="@dimen/dp_12"
+                            android:layout_marginLeft="@dimen/dp_12"
+                            android:layout_marginBottom="@dimen/dp_18"
+                            />
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:background="@color/colorShouye"
+                        android:layout_marginLeft="@dimen/dp_12"
+                        android:layout_marginRight="@dimen/dp_12"
+                        />
+
+                    <RelativeLayout
+                        android:orientation="vertical"
+                        android:background="@color/colorWhite"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txt_jifu"
+                            android:layout_marginTop="@dimen/dp_12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/jifu"
+                            android:textSize="@dimen/sp_18"
+                            android:textColor="@color/colorContent"
+                            android:layout_marginLeft="@dimen/dp_12"
+                            android:layout_marginBottom="@dimen/dp_6"
+                            />
+
+                        <TextView
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/dp_12"
+                            android:layout_marginTop="@dimen/dp_12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="￥6000元/月"
+                            android:textSize="@dimen/sp_16"
+                            android:textColor="@color/colorContent"
+                            />
+
+                        <TextView
+                            android:layout_below="@+id/txt_jifu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="押金： ￥2000元"
+                            android:textSize="@dimen/sp_16"
+                            android:textColor="@color/colorTextGrey"
+                            android:layout_marginTop="@dimen/dp_12"
+                            android:layout_marginLeft="@dimen/dp_12"
+                            android:layout_marginBottom="@dimen/dp_18"
+                            />
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:background="@color/colorShouye"
+                        android:layout_marginLeft="@dimen/dp_12"
+                        android:layout_marginRight="@dimen/dp_12"
+                        />
+
+                    <RelativeLayout
+                        android:orientation="vertical"
+                        android:background="@color/colorWhite"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txt_bannianfu"
+                            android:layout_marginTop="@dimen/dp_12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/bannainfu"
+                            android:textSize="@dimen/sp_18"
+                            android:textColor="@color/colorContent"
+                            android:layout_marginLeft="@dimen/dp_12"
+                            android:layout_marginBottom="@dimen/dp_6"
+                            />
+
+                        <TextView
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/dp_12"
+                            android:layout_marginTop="@dimen/dp_12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="￥12000元/月"
+                            android:textSize="@dimen/sp_16"
+                            android:textColor="@color/colorContent"
+                            />
+
+                        <TextView
+                            android:layout_below="@+id/txt_bannianfu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="押金： ￥2000元"
+                            android:textSize="@dimen/sp_16"
+                            android:textColor="@color/colorTextGrey"
+                            android:layout_marginTop="@dimen/dp_12"
+                            android:layout_marginLeft="@dimen/dp_12"
+                            android:layout_marginBottom="@dimen/dp_18"
+                            />
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:background="@color/colorShouye"
+                        android:layout_marginLeft="@dimen/dp_12"
+                        android:layout_marginRight="@dimen/dp_12"
+                        />
+
+                    <RelativeLayout
+                        android:orientation="vertical"
+                        android:background="@color/colorWhite"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txt_nianfu"
+                            android:layout_marginTop="@dimen/dp_12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/nianfu"
+                            android:textSize="@dimen/sp_18"
+                            android:textColor="@color/colorContent"
+                            android:layout_marginLeft="@dimen/dp_12"
+                            android:layout_marginBottom="@dimen/dp_6"
+                            />
+
+                        <TextView
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/dp_12"
+                            android:layout_marginTop="@dimen/dp_12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="￥24000元/月"
+                            android:textSize="@dimen/sp_16"
+                            android:textColor="@color/colorContent"
+                            />
+
+                        <TextView
+                            android:layout_below="@+id/txt_nianfu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="押金： ￥2000元"
+                            android:textSize="@dimen/sp_16"
+                            android:textColor="@color/colorTextGrey"
+                            android:layout_marginTop="@dimen/dp_12"
+                            android:layout_marginLeft="@dimen/dp_12"
+                            android:layout_marginBottom="@dimen/dp_18"
+                            />
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:background="@color/colorShouye"
+                        android:layout_marginLeft="@dimen/dp_12"
+                        android:layout_marginRight="@dimen/dp_12"
+                        />
+
+                    <RelativeLayout
+                        android:orientation="vertical"
+                        android:background="@color/colorWhite"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txt_shuoming"
+                            android:layout_marginTop="@dimen/dp_12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/shuoming"
+                            android:textSize="@dimen/sp_18"
+                            android:textColor="@color/colorContent"
+                            android:layout_marginLeft="@dimen/dp_12"
+                            android:layout_marginBottom="@dimen/dp_6"
+                            />
+
+                        <TextView
+                            android:id="@+id/shuoming1"
+                            android:layout_below="@+id/txt_shuoming"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/shuoming1"
+                            android:textSize="@dimen/sp_14"
+                            android:textColor="@color/colorTextGrey"
+                            android:layout_marginTop="@dimen/dp_12"
+                            android:layout_marginLeft="@dimen/dp_12"
+                            />
+
+                        <TextView
+
+                            android:layout_below="@+id/shuoming1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2.解约时，未发生的租金将按日结猜"
+                            android:textSize="@dimen/sp_14"
+                            android:layout_marginTop="@dimen/dp_5"
+                            android:textColor="@color/colorTextGrey"
+                            android:layout_marginLeft="@dimen/dp_12"
+                            android:layout_marginBottom="@dimen/dp_18"
+                            />
+
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

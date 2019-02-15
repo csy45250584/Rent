@@ -60,5 +60,7 @@ public class MySpUtil {
         return userInfoBean;
     }
 
-
+    public void saveTel(String tel) {
+        mPersonInfoSp.put(SpConsts.KEY_TEL, tel);
+    }
 }

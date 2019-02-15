@@ -7,7 +7,11 @@ import android.util.Log;
 
 import com.alibaba.fastjson.JSON;
 import com.haokuo.rent.bean.SuccessBean;
+import com.haokuo.rent.network.params.LoginByPasswordParams;
+import com.haokuo.rent.network.params.LoginByTelParams;
+import com.haokuo.rent.network.params.RegisterByTelParams;
 import com.haokuo.rent.network.params.base.IGetParamsMap;
+import com.haokuo.rent.network.params.base.TelPhoneParams;
 import com.haokuo.rent.network.params.base.UserIdTokenParams;
 import com.haokuo.rent.util.MySpUtil;
 
@@ -165,24 +169,24 @@ public class HttpHelper {
         mClient.newCall(request).enqueue(new OkHttpCallBack(callback));
     }
 
-//    private void doPostUploadFile(UploadFileParams uploadFileParams, String url, Object tag, NetworkCallback callback) {
-//        List<File> files = uploadFileParams.getFile();
-//        MultipartBody.Builder builder = new MultipartBody.Builder()
-//                .setType(MultipartBody.FORM);
-//        builder.addFormDataPart("userId", String.valueOf(MySpUtil.getInstance().getUserId()));
-//        builder.addFormDataPart("token", MySpUtil.getInstance().getToken());
-//        for (File file : files) {
-//            RequestBody fileBody = RequestBody.create(MediaType.parse(uploadFileParams.getType()), file);
-//            builder.addFormDataPart("file", file.getName(), fileBody);
-//        }
-//        MultipartBody requestBody = builder.build();
-//        Request request = new Request.Builder()
-//                .post(requestBody)
-//                .url(UrlConfig.BASE_URL + url)
-//                .tag(tag)
-//                .build();//创建Request 对象
-//        mClient.newCall(request).enqueue(new OkHttpCallBack(callback));
-//    }
+    //    private void doPostUploadFile(UploadFileParams uploadFileParams, String url, Object tag, NetworkCallback callback) {
+    //        List<File> files = uploadFileParams.getFile();
+    //        MultipartBody.Builder builder = new MultipartBody.Builder()
+    //                .setType(MultipartBody.FORM);
+    //        builder.addFormDataPart("userId", String.valueOf(MySpUtil.getInstance().getUserId()));
+    //        builder.addFormDataPart("token", MySpUtil.getInstance().getToken());
+    //        for (File file : files) {
+    //            RequestBody fileBody = RequestBody.create(MediaType.parse(uploadFileParams.getType()), file);
+    //            builder.addFormDataPart("file", file.getName(), fileBody);
+    //        }
+    //        MultipartBody requestBody = builder.build();
+    //        Request request = new Request.Builder()
+    //                .post(requestBody)
+    //                .url(UrlConfig.BASE_URL + url)
+    //                .tag(tag)
+    //                .build();//创建Request 对象
+    //        mClient.newCall(request).enqueue(new OkHttpCallBack(callback));
+    //    }
 
     public void cancelRequest(Object tag) {
         if (tag == null)
@@ -261,5 +265,35 @@ public class HttpHelper {
         }
         builder.delete(builder.length() - 1, builder.length());
         return builder.toString();
+    }
+
+    /** 获取注册验证码 **/
+    public void getRegisterCode(TelPhoneParams params, NetworkCallback callback) {
+        doPost(params, UrlConfig.GET_REGISTER_CODE_URL, callback);
+    }
+
+    /** 验证码注册 **/
+    public void registerByTel(RegisterByTelParams params, NetworkCallback callback) {
+        doPost(params, UrlConfig.REGISETER_BY_TEL_URL, callback);
+    }
+
+    /** 获取登录用验证码 **/
+    public void getLoginCode(TelPhoneParams params, NetworkCallback callback) {
+        doPost(params, UrlConfig.GET_LOGIN_CODE_URL, callback);
+    }
+
+    /** 手机验证码登陆 **/
+    public void loginByTel(LoginByTelParams params, NetworkCallback callback) {
+        doPost(params, UrlConfig.LOGIN_BY_TEL_URL, callback);
+    }
+
+    /** 密码登录 **/
+    public void loginByPassword(LoginByPasswordParams params, NetworkCallback callback) {
+        doPost(params, UrlConfig.LOGIN_BY_PASSWORD_URL, callback);
+    }
+
+    /** 获取用户信息 **/
+    public void getUserInfo(NetworkCallback callback) {
+        doPost(null, UrlConfig.GET_USER_INFO_URL, callback);
     }
 }

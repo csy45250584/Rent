@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="@dimen/dp_12"
+    android:background="@color/colorWhite">
+
+    <!--<Button-->
+        <!--android:id="@+id/showPeitao"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@null"-->
+        <!--android:text="衣柜"-->
+        <!--android:textSize="@dimen/sp_14"-->
+        <!--android:textColor="@color/colorContent"-->
+        <!--android:drawableTop="@mipmap/dt"-->
+        <!--android:clickable="true"-->
+        <!--android:padding="@dimen/dp_12"-->
+        <!--android:drawablePadding="@dimen/dp_12"-->
+
+        <!--/>-->
+    <ImageView
+        android:id="@+id/img_peitao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/dt"/>
+
+    <TextView
+        android:id="@+id/txt_peitao"
+        android:layout_marginTop="@dimen/dp_12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="衣柜"
+        android:textSize="@dimen/sp_14"
+        android:textColor="@color/colorContent"
+        />
+
+
+</LinearLayout>

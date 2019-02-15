@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/halfalpha"
+    android:orientation="vertical"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+
+        >
+
+        <TextView
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/chaoxiang"
+            android:textColor="@color/colorTextBlack"
+            android:textSize="@dimen/sp_18"
+            android:layout_marginLeft="@dimen/dp_12"
+            />
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/dp_12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            >
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dong"
+                style="@style/Checkbox"
+
+                />
+            <CheckBox
+                android:layout_marginLeft="@dimen/dp_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nan"
+                style="@style/Checkbox"
+
+                />
+            <CheckBox
+                android:layout_marginLeft="@dimen/dp_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/xi"
+                style="@style/Checkbox"
+
+                />
+            <CheckBox
+                android:layout_marginLeft="@dimen/dp_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bei"
+                style="@style/Checkbox"
+
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorShouye"
+            android:layout_margin="@dimen/dp_12"
+            />
+
+        <TextView
+            android:layout_marginTop="@dimen/dp_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fangyuantese"
+            android:textColor="@color/colorTextBlack"
+            android:textSize="@dimen/sp_18"
+            android:layout_marginLeft="@dimen/dp_12"/>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/dp_12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            >
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sccz"
+                style="@style/Checkbox"
+
+                />
+            <CheckBox
+                android:layout_marginLeft="@dimen/dp_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dw"
+                style="@style/Checkbox"
+
+                />
+            <CheckBox
+                android:layout_marginLeft="@dimen/dp_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dy"
+                style="@style/Checkbox"
+
+                />
+            <CheckBox
+                android:layout_marginLeft="@dimen/dp_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dn"
+                style="@style/Checkbox"
+
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorShouye"
+            android:layout_margin="@dimen/dp_12"
+            />
+
+        <TextView
+            android:layout_marginTop="@dimen/dp_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fyzb"
+            android:textColor="@color/colorTextBlack"
+            android:textSize="@dimen/sp_18"
+            android:layout_marginLeft="@dimen/dp_12"/>
+
+        <LinearLayout
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_12"
+            android:orientation="horizontal">
+
+            <CheckBox
+                style="@style/Checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ldtj"
+
+                />
+
+            <CheckBox
+                style="@style/Checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_6"
+                android:text="@string/lhlg"
+
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorShouye"
+            android:layout_margin="@dimen/dp_12"
+            />
+
+        <TextView
+            android:layout_marginTop="@dimen/dp_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/qysc"
+            android:textColor="@color/colorTextBlack"
+            android:textSize="@dimen/sp_18"
+            android:layout_marginLeft="@dimen/dp_12"/>
+
+        <LinearLayout
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_12"
+            android:orientation="horizontal">
+
+            <CheckBox
+                style="@style/Checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="年租"
+
+                />
+
+            <CheckBox
+                style="@style/Checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_6"
+                android:text="短租"
+
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorShouye"
+            android:layout_margin="@dimen/dp_12"
+            />
+
+        <TextView
+            android:layout_marginTop="@dimen/dp_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fyzt"
+            android:textColor="@color/colorTextBlack"
+            android:textSize="@dimen/sp_18"
+            android:layout_marginLeft="@dimen/dp_12"/>
+
+        <LinearLayout
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_12"
+            android:orientation="horizontal">
+
+            <CheckBox
+                style="@style/Checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ljrz"
+
+                />
+
+            <CheckBox
+                style="@style/Checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_6"
+                android:text="@string/kyd"
+
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorShouye"
+            android:layout_margin="@dimen/dp_12"
+            />
+
+        <LinearLayout
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingRight="@dimen/dp_12"
+            android:layout_marginTop="@dimen/dp_55"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/chongzhi"
+                android:textColor="@color/colorWhite"
+                android:layout_marginLeft="@dimen/dp_6"
+                android:textSize="@dimen/sp_16"
+                android:background="@drawable/shape_btnchongzhi"
+
+                />
+
+            <Button
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/queren"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:layout_marginRight="@dimen/dp_6"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/shape_btnqueding"
+                android:textSize="@dimen/sp_16"
+
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

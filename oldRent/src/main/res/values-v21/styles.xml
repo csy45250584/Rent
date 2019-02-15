@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Wode">
+        <item name="android:button">@null</item>
+        <!--<item name="android:buttonStyle">@style/Widget.AppCompat.Button.Borderless</item>-->
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:background">@color/colorWhite</item>
+        <item name="android:textColor">@color/colorContent</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+    </style>
+
+    <style name="Wodebtn">
+        <item name="android:button">@null</item>
+        <!--<item name="android:background">@color/colorWhite</item>-->
+        <item name="android:layout_weight">1</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:textSize">@dimen/sp_12</item>
+        <item name="android:paddingTop">@dimen/dp_12</item>
+        <item name="android:paddingBottom">@dimen/dp_12</item>
+        <item name="android:layout_marginLeft">@dimen/dp_4</item>
+        <item name="android:layout_marginRight">@dimen/dp_4</item>
+    </style>
+
+    <style name="Chengweifangdong">
+        <item name="android:button">@null</item>
+        <item name="android:stateListAnimator">@null</item>
+
+        <item name="android:background">@color/colorWhite</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:textSize">@dimen/sp_12</item>
+        <item name="android:textColor">@color/colorTextGrey</item>
+
+
+    </style>
+</resources>

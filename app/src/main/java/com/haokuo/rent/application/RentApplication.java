@@ -63,11 +63,11 @@ public class RentApplication extends Application {
     private void initBarStyle() {
         Resources resources = getResources();
         BarStyle barStyle = new BarStyle.Builder()
-                .setBackgroundColor(resources.getColor(R.color.colorPrimary))
-                .setTitleColor(resources.getColor(R.color.colorWhite))
+                .setBackgroundColor(resources.getColor(R.color.colorWhite))
+                .setTitleColor(resources.getColor(R.color.colorText1))
                 .setTitleSize(resources.getDimension(R.dimen.sp_19))
                 .setHasBackArrow(true)
-//                .setNavigationIconId(R.drawable.t1)
+                .setNavigationIconId(R.drawable.tc_1)
                 .build();
         MidTitleBar.initStyle(barStyle);
     }

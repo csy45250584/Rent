@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_6"
+            android:paddingRight="@dimen/dp_6"
+            android:layout_marginTop="@dimen/dp_6"
+            android:layout_marginBottom="@dimen/dp_12"
+            >
+    <RelativeLayout
+        android:layout_weight="0.143"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:layout_height="match_parent">
+        <com.haokuo.housemanage.houserentmanage.Utils.CheckBoxSample
+            android:id="@+id/check_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:color_background="#FFB704"
+            app:color_border="#C7C7C7"
+            app:size="@dimen/dp_18"
+            />
+
+    </RelativeLayout>
+
+            <LinearLayout
+                android:layout_weight="0.64"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/txt_ruzhuName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="河海"
+                    android:textSize="@dimen/sp_18"
+                    android:textColor="@color/colorTextBlack"
+                    />
+
+                <TextView
+                    android:layout_marginTop="@dimen/dp_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="身份证号：215632156233"
+                    android:textSize="@dimen/sp_16"
+                    android:textColor="@color/colorContent"
+                    />
+                <TextView
+                    android:layout_marginTop="@dimen/dp_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="联系方式：15902365784"
+                    android:textSize="@dimen/sp_16"
+                    android:textColor="@color/colorContent"
+                    />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_margin="@dimen/dp_12"
+                android:layout_weight="0.19"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@mipmap/txpj"/>
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_marginRight="@dimen/dp_12"
+            android:background="@color/colorShouye"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

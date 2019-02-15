@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:focusableInTouchMode="true"
+        android:layout_marginTop="@dimen/dp_12"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="杭州"
+                android:textSize="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_12"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginBottom="@dimen/dp_12"
+                android:layout_marginRight="@dimen/dp_5"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorTextBlack"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/xjt"
+                />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_weight="3.4"
+            android:id="@+id/linear_sousuo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_linearlayout"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_6"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ss"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_6"
+                android:layout_marginTop="@dimen/dp_6"
+                android:layout_marginBottom="@dimen/dp_6"
+                android:layout_marginRight="@dimen/dp_6"
+                />
+
+            <TextView
+                android:id="@+id/edit_shouyeshousuo"
+                android:layout_width="@dimen/dp_200"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="@string/sousuohint"
+                android:singleLine="true"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/colorTextBlack"
+                android:textColorHint="@color/colorTextGrey"
+                android:textSize="@dimen/sp_14"
+
+                />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_weight="0.6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/xx"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:layout_marginTop="@dimen/dp_12"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:paddingLeft="@dimen/dp_12"
+                    android:paddingRight="@dimen/dp_12"
+                    android:paddingBottom="@dimen/dp_12"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <com.haokuo.housemanage.houserentmanage.viewPager.BannerViewPager
+                        android:id="@+id/banner"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_200">
+
+                    </com.haokuo.housemanage.houserentmanage.viewPager.BannerViewPager>
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/colorShouye"
+                    />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/dp_16"
+                        android:layout_marginBottom="@dimen/dp_16"
+                        >
+
+                        <Button
+                            style="@style/zzBtn"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:drawableTop="@mipmap/zz"
+                            android:text="@string/jingxuan" />
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawableTop="@mipmap/zz1"
+                            android:text="@string/zhengzu"
+                            style="@style/zzBtn"
+
+                            />
+                        <Button
+                            android:drawableTop="@mipmap/zz2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/hezu"
+                            style="@style/zzBtn"
+
+                            />
+
+                        <Button
+                            android:id="@+id/btn_wurenjiudian"
+                            android:paddingTop="10dp"
+                            style="@style/zzBtn"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:drawableTop="@mipmap/jdwx"
+                            android:text="@string/wurenjiudian" />
+
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/colorWhite"
+
+                >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_6"
+                    android:background="@color/colorShouye"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp_16"
+                        android:text="@string/fujinfangyun"
+                        android:textColor="@color/colorTextBlack"
+                        android:textSize="@dimen/sp_18" />
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_16"
+                        android:layout_height="@dimen/dp_16"
+                        android:src="@mipmap/dw"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/txt_here"
+                        android:layout_marginRight="@dimen/dp_5"
+                        />
+
+                    <TextView
+                        android:id="@+id/txt_here"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="湘湖科创园"
+                        android:layout_marginRight="@dimen/dp_12"
+                        android:textColor="@color/colorTextGrey"
+                        android:textSize="@dimen/sp_16" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="@dimen/dp_16"
+                    android:paddingLeft="@dimen/dp_16"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="173dp"
+                        android:src="@drawable/dtm" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/dp_12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/colorWhite"
+
+                >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_6"
+                    android:background="@color/colorShouye"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt_fujin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/jingxuanfangyun"
+                        android:textColor="@color/colorTextBlack"
+                        android:textSize="@dimen/sp_18"
+                        android:layout_marginLeft="@dimen/dp_12"
+                        android:layout_marginTop="@dimen/dp_12"
+                        />
+                    <TextView
+                        android:layout_below="@id/txt_fujin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fenggesheji"
+                        android:textColor="@color/colorTextGrey"
+                        android:textSize="@dimen/sp_12"
+                        android:layout_marginTop="@dimen/dp_6"
+                        android:layout_marginLeft="@dimen/dp_16"
+                        android:layout_marginBottom="@dimen/dp_12"
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/gd"
+                        android:layout_marginRight="@dimen/dp_12"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dp_16"
+                    android:paddingRight="@dimen/dp_16"
+                    android:paddingBottom="@dimen/dp_12"
+
+                    >
+
+                    <com.haokuo.housemanage.houserentmanage.HorizontalListView
+                        android:id="@+id/Hlist_jingxuan"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_236"
+                        android:orientation="horizontal" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/dp_12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/colorWhite"
+
+                >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_6"
+                    android:background="@color/colorShouye"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt_zhengzu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/zhengzufangyuan"
+                        android:textColor="@color/colorTextBlack"
+                        android:textSize="@dimen/sp_18"
+                        android:layout_marginLeft="@dimen/dp_12"
+                        android:layout_marginTop="@dimen/dp_12"
+                        />
+                    <TextView
+                        android:layout_below="@id/txt_zhengzu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/chengtaochuzu"
+                        android:textColor="@color/colorTextGrey"
+                        android:textSize="@dimen/sp_12"
+                        android:layout_marginTop="@dimen/dp_6"
+                        android:layout_marginLeft="@dimen/dp_16"
+                        android:layout_marginBottom="@dimen/dp_12"
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/gd"
+                        android:layout_marginRight="@dimen/dp_12"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dp_16"
+                    android:paddingRight="@dimen/dp_16"
+                    android:paddingBottom="@dimen/dp_12"                    >
+
+                    <com.haokuo.housemanage.houserentmanage.HorizontalListView
+                        android:id="@+id/Hlist_zhengzu"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_236"
+                        android:orientation="horizontal"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/dp_12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/colorWhite"
+
+                >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_6"
+                    android:background="@color/colorShouye"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt_hezu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hezu"
+                        android:textColor="@color/colorTextBlack"
+                        android:textSize="@dimen/sp_18"
+                        android:layout_marginLeft="@dimen/dp_12"
+                        android:layout_marginTop="@dimen/dp_12"
+                        />
+                    <TextView
+                        android:layout_below="@id/txt_hezu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/wenxinhezu"
+                        android:textColor="@color/colorTextGrey"
+                        android:textSize="@dimen/sp_12"
+                        android:layout_marginTop="@dimen/dp_6"
+                        android:layout_marginLeft="@dimen/dp_16"
+                        android:layout_marginBottom="@dimen/dp_12"
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/gd"
+                        android:layout_marginRight="@dimen/dp_12"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dp_16"
+                    android:paddingRight="@dimen/dp_16"
+                    android:paddingBottom="@dimen/dp_12"                    >
+
+                    <com.haokuo.housemanage.houserentmanage.HorizontalListView
+                        android:id="@+id/Hlist_hezu"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_236"
+                        android:orientation="horizontal"
+                        />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/dp_12"
+                android:layout_marginBottom="@dimen/dp_50"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/colorWhite"
+
+                >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_6"
+                    android:background="@color/colorShouye"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt_wurenjiudian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/wurenjiudian"
+                        android:textColor="@color/colorTextBlack"
+                        android:textSize="@dimen/sp_18"
+                        android:layout_marginLeft="@dimen/dp_12"
+                        android:layout_marginTop="@dimen/dp_12"
+                        />
+                    <TextView
+                        android:layout_below="@id/txt_wurenjiudian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/kuaijiefuwu"
+                        android:textColor="@color/colorTextGrey"
+                        android:textSize="@dimen/sp_12"
+                        android:layout_marginTop="@dimen/dp_6"
+                        android:layout_marginLeft="@dimen/dp_16"
+                        android:layout_marginBottom="@dimen/dp_12"
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/gd"
+                        android:layout_marginRight="@dimen/dp_12"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dp_18"
+                    android:paddingRight="@dimen/dp_18"
+                    android:paddingBottom="@dimen/dp_12"                    >
+
+                    <com.haokuo.housemanage.houserentmanage.HorizontalListView
+                        android:id="@+id/Hlist_wurenjiudian"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_236"
+                        android:orientation="horizontal" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>

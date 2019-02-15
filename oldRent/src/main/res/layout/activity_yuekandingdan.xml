@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:gravity="center_horizontal"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        >
+        <RelativeLayout
+            android:id="@+id/Realtive_yuekantuichu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dp_12">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/tc"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yuekandingdan"
+            android:textColor="@color/colorContent"
+            android:textSize="@dimen/sp_16"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/dp_12"
+            />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/colorTextGrey"
+
+        />
+
+    <ImageView
+        android:layout_marginTop="@dimen/dp_50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/db"
+        android:layout_marginBottom="@dimen/dp_16" />
+
+    <TextView
+        android:layout_marginTop="@dimen/dp_16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/yuekantijiao"
+        android:textColor="@color/colorContent"
+        android:textSize="@dimen/sp_16"
+        />
+    <TextView
+        android:layout_marginTop="@dimen/dp_12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lianxinin"
+        android:textColor="@color/colorTextGrey"
+        android:textSize="@dimen/sp_12"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp_50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_chakanyuekan"
+            android:paddingRight="@dimen/dp_18"
+            android:paddingLeft="@dimen/dp_18"
+
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/chakanyuekan"
+            android:textSize="@dimen/sp_18"
+            android:textColor="@color/colorContent"
+            android:background="@drawable/shape_btnyuekan"
+            android:layout_marginRight="@dimen/dp_12"
+            />
+        <Button
+            android:id="@+id/btn_jixuzhaofang"
+            android:paddingRight="@dimen/dp_18"
+            android:paddingLeft="@dimen/dp_18"
+            android:background="@drawable/shape_btnjixuzhaofang"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_18"
+            android:text="@string/jixuzhaofang"
+            android:textColor="@color/colorJuse"
+            android:layout_marginLeft="@dimen/dp_12"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

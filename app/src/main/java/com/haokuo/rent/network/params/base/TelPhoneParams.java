@@ -7,9 +7,9 @@ import lombok.Data;
  */
 @Data
 public class TelPhoneParams {
-    private String telphone;
+    private String phone;
 
-    public TelPhoneParams(String telphone) {
-        this.telphone = telphone;
+    public TelPhoneParams(String phone) {
+        this.phone = phone;
     }
 }

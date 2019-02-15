@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorTextBlue">#3690f6</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorGrey">#F7F7F7</color>
+        <color name="colorTextBlack">#0F0F0F</color>
+    <color name="colorTextGrey">#C7C7C7</color>
+       <color name="colorShouye">#F3F3F3</color>
+    <color name="colorLine">#E5E5E5</color>
+    <color name="colorJuse">#FFB704</color>
+    <color name="colorcheckbox">#FEF9EE</color>
+    <color name="colorchongzhi">#BBBBBB</color>
+    <color name="halfalpha">#80000000</color>
+
+    <color name="colorWodehetong">#FBB6A9</color>
+    <color name="colorDaijiaozhangdan">#FAD896</color>
+    <color name="colorZaixianbaoxiu">#CAE996</color>
+    <color name="colorYuyuebaojie">#90E673</color>
+
+    <color name="colorHetong">#FCF7F6</color>
+    <color name="colorDaijiao">#FCFAF6</color>
+    <color name="colorBaoxiu">#FBFCF6</color>
+    <color name="colorBaojie">#F6FCF7</color>
+    <color name="colorWodedaohang">#FFFDE8</color>
+    <color name="colorContent">#6C6C6C</color>
+    <color name="colorShouquan">#A9A9A9</color>
+
+    <color name="gray_dft">#888888</color>
+    <color name="black_dft">#2b2b2b</color>
+</resources>

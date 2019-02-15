@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <FrameLayout
+        android:id="@+id/Framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/end_padder"
+        >
+
+    </FrameLayout>
+
+    <View
+        android:layout_alignBottom="@+id/Framelayout"
+        android:layout_width="match_parent"
+        android:background="#CCCCCC"
+        android:layout_height="@dimen/dp_1"/>
+
+    <RelativeLayout
+        android:id="@+id/end_padder"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_55"
+        android:background="#0000"
+        android:gravity="center"
+        >
+
+
+
+
+
+        <RadioGroup
+            android:id="@+id/mHomeRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="#0000"
+            android:layout_alignParentBottom="true"
+            >
+
+            <RadioButton
+                android:id="@+id/radiobtn_shouye"
+                style="@style/radioButton"
+                android:checked="true"
+                android:text="@string/shouye"
+                android:drawableTop="@drawable/selector_shouye"
+
+
+                />
+
+            <RadioButton
+                android:id="@+id/radiobtn_zhaofang"
+                style="@style/radioButton"
+                android:text="@string/zhaofang"
+                android:drawableTop="@drawable/selector_zhaofang"
+
+                />
+            <RadioButton
+                android:id="@+id/radiobtn_fangdong"
+                style="@style/radioButton"
+                android:text="@string/zhaofang"
+                android:drawableTop="@drawable/selector_shezhi"
+
+
+                />
+
+            <RadioButton
+                android:id="@+id/rediobtn_wode"
+                style="@style/radioButton"
+                android:text="@string/wode"
+                android:drawableTop="@drawable/selector_wode"
+
+                />
+
+        </RadioGroup>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

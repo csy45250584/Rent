@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorShouye"
+    android:orientation="vertical"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWodedaohang"
+
+
+        >
+        <LinearLayout
+            android:layout_marginLeft="@dimen/dp_12"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/qh"/>
+            <TextView
+                android:layout_marginLeft="@dimen/dp_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/qiehuanfangdong"
+                android:textColor="@color/colorTextBlack"
+                android:textSize="@dimen/sp_14"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wode"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/colorTextBlack"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/dp_12"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/xx"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_12"
+            />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/wdbj"
+
+                >
+
+                <ImageView
+
+                    android:id="@+id/image_touxiang"
+                    android:layout_width="@dimen/dp_90"
+                    android:layout_height="@dimen/dp_90"
+                    android:src="@mipmap/tx"
+                    android:padding="@dimen/dp_20"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="@dimen/dp_20"
+                    android:layout_marginLeft="@dimen/dp_18"
+                    android:background="@drawable/shape_wodehead" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:layout_toRightOf="@+id/image_touxiang"
+                    android:text="胡海"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="@dimen/sp_20" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:padding="@dimen/dp_16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:orientation="horizontal"
+                >
+                <Button
+                    style="@style/Wode"
+
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shoucang"
+                    android:drawableTop="@mipmap/scllb"
+
+                    />
+                <Button
+                    style="@style/Wode"
+
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yuekan"
+                    android:drawableTop="@mipmap/yklb"
+                    />
+                <Button
+                    style="@style/Wode"
+
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dingdan"
+                    android:drawableTop="@mipmap/ddlb"
+                    />
+                <Button
+                    style="@style/Wode"
+
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pingjia"
+                    android:drawableTop="@mipmap/pjlb"
+                    />
+                <Button
+                    style="@style/Wode"
+
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/qianbao"
+                    android:drawableTop="@mipmap/qb"
+                    />
+
+
+
+
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/dp_6"
+                android:background="@color/colorWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                >
+
+                <TextView
+                    android:id="@+id/txt_wodejia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wodejia"
+                    android:textColor="@color/colorTextBlack"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:layout_marginBottom="@dimen/dp_16"
+                    android:textSize="@dimen/sp_18"
+                    />
+
+                <RelativeLayout
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/txt_wodejia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_12"
+
+                    >
+
+                    <View
+                        android:id="@+id/wodejiaview"
+                        android:layout_width="@dimen/dp_0.5"
+                        android:layout_height="@dimen/dp_12"
+                        android:background="@color/colorTextBlack"
+                        android:layout_centerVertical="true"
+                        />
+
+                    <TextView
+                        android:id="@+id/txt_zifw"
+                        android:layout_toRightOf="@+id/wodejiaview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/zhuanxiangfuwu"
+                        android:textSize="@dimen/sp_12"
+                        android:textColor="@color/colorTextGrey"
+                        android:layout_marginLeft="@dimen/dp_12"
+                        />
+                </RelativeLayout>
+
+
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp_12"
+                android:paddingRight="@dimen/dp_12"
+                android:paddingBottom="@dimen/dp_16"
+                >
+
+                <Button
+
+                    style="@style/Wodebtn"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wodehetong"
+                    android:textColor="@color/colorWodehetong"
+                    android:drawableTop="@mipmap/ht"
+                    android:background="@color/colorHetong"
+                    />
+
+                <Button
+
+                    style="@style/Wodebtn"
+                    android:layout_height="wrap_content"
+                    android:text="@string/daijiaozhangdan"
+                    android:textColor="@color/colorDaijiaozhangdan"
+                    android:drawableTop="@mipmap/zd"
+                    android:background="@color/colorDaijiao"
+                    />
+
+                <Button
+
+                    style="@style/Wodebtn"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zaixianyuyue"
+                    android:textColor="@color/colorZaixianbaoxiu"
+                    android:drawableTop="@mipmap/bx"
+                    android:background="@color/colorBaoxiu"
+                    />
+
+                <Button
+
+                    style="@style/Wodebtn"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yuyuebaojie"
+                    android:textColor="@color/colorYuyuebaojie"
+                    android:drawableTop="@mipmap/yybj"
+                    android:background="@color/colorBaojie"
+                    />
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/dp_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+
+                >
+
+                <TextView
+                    android:layout_marginTop="@dimen/dp_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tousujianyi"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="@dimen/sp_16"
+                    android:layout_margin="@dimen/dp_12"
+
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/d_gd"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_12"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_0.5"
+                android:background="@color/colorWhite"
+
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_12"
+                    android:layout_marginTop="@dimen/dp_6"
+                    android:text="@string/gerenshezhi"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="@dimen/sp_16"
+
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_12"
+                    android:src="@mipmap/d_gd" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

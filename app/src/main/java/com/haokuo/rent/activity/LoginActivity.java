@@ -16,10 +16,13 @@ import com.haokuo.rent.consts.SpConsts;
 import com.haokuo.rent.network.EntityCallback;
 import com.haokuo.rent.network.HttpHelper;
 import com.haokuo.rent.network.NetworkCallback;
+import com.haokuo.rent.network.params.LoginByPasswordParams;
+import com.haokuo.rent.network.params.LoginByTelParams;
 import com.haokuo.rent.network.params.base.TelPhoneParams;
 import com.haokuo.rent.util.MySpUtil;
 import com.haokuo.rent.util.utilscode.RegexUtils;
 import com.haokuo.rent.util.utilscode.SPUtils;
+import com.haokuo.rent.util.utilscode.ScreenUtils;
 import com.haokuo.rent.util.utilscode.ToastUtils;
 import com.haokuo.rent.view.CountDownTextView;
 import com.rey.material.widget.Button;
@@ -34,8 +37,6 @@ import okhttp3.Call;
  */
 public class LoginActivity extends BaseActivity {
     private static final int CODE_NUM = 4;
-    private static final long TOTAL_TIME = 60 * 1000;
-    private static final long ONCE_TIME = 1000;
     @BindView(R.id.btn_register)
     Button mBtnRegister;
     @BindView(R.id.et_tel)
@@ -74,6 +75,7 @@ public class LoginActivity extends BaseActivity {
 
     @Override
     protected void initData() {
+        ScreenUtils.printScreenInfo();
         mIsTelLogin = true;
         applyUiByState();
         mEtCode.setFilters(new InputFilter[]{new InputFilter.LengthFilter(CODE_NUM)});
@@ -105,11 +107,11 @@ public class LoginActivity extends BaseActivity {
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (resultCode == RESULT_OK && data != null) {// 注册成功
-//            showLoading("登录中...");
-//            String tel = data.getStringExtra(RegisterActivity.EXTRA_TEL);
-//            String password = data.getStringExtra(RegisterActivity.EXTRA_PASSWORD);
-//            LoginParams params = new LoginParams(tel, password);
-//            HttpHelper.getInstance().login(params, mLoginCallback);
+            showLoading("登录中...");
+            String tel = data.getStringExtra(RegisterActivity.EXTRA_TEL);
+            String password = data.getStringExtra(RegisterActivity.EXTRA_PASSWORD);
+            LoginByPasswordParams params = new LoginByPasswordParams(tel, password);
+            HttpHelper.getInstance().loginByPassword(params, mLoginCallback);
         }
     }
 
@@ -128,7 +130,7 @@ public class LoginActivity extends BaseActivity {
                             }
                             mTvGetCode.sendingCode();
                             TelPhoneParams params = new TelPhoneParams(tel);
-                            HttpHelper.getInstance().getLoginVerifyCode(params, new NetworkCallback() {
+                            HttpHelper.getInstance().getLoginCode(params, new NetworkCallback() {
                                 @Override
                                 public void onSuccess(Call call, String json) {
                                     mTvGetCode.startCountTime();
@@ -144,6 +146,7 @@ public class LoginActivity extends BaseActivity {
                     }
                     break;
                     case R.id.btn_login: {
+                        startActivity(new Intent(LoginActivity.this, MainActivity.class));
                         if (mIsTelLogin) {
                             String tel = mEtTel.getEditableText().toString().trim();
                             String code = mEtCode.getEditableText().toString().trim();
@@ -166,8 +169,8 @@ public class LoginActivity extends BaseActivity {
                                 return;
                             }
                             showLoading("登录中...");
-                            LoginParams params = new LoginParams(account, password);
-                            HttpHelper.getInstance().login(params, mLoginCallback);
+                            LoginByPasswordParams params = new LoginByPasswordParams(account, password);
+                            HttpHelper.getInstance().loginByPassword(params, mLoginCallback);
                         }
                     }
                     break;

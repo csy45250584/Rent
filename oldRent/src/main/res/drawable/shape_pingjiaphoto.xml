@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--填充背景色 -->
+    <solid android:color="@color/colorShouye" />     //solid  指的是背景颜色的设置
+
+    <!--<item android:color="#F7F7F7"/>-->
+
+    <stroke android:width="@dimen/dp_1" android:color="@color/colorContent"/>
+
+
+
+</shape>

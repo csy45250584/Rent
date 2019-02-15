@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorShouye"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorTextBlack"
+        android:background="@color/colorWhite"
+        android:gravity="center"    >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/woyaodangfangdong"
+            android:textSize="@dimen/sp_16"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="@dimen/dp_12"
+            android:textColor="@color/colorTextBlack"
+
+            />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/colorWhite"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/fdlb"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_12"
+        >
+        <Button
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/lianxiwomen"
+            android:textSize="@dimen/sp_16"
+            android:layout_marginRight="@dimen/dp_6"
+            android:textColor="@color/colorTextGrey"
+            android:background="@drawable/shape_btnlianxiwomen"
+            />
+        <Button
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/likechengwei"
+            android:textColor="@color/colorWhite"
+            android:layout_marginLeft="@dimen/dp_6"
+            android:background="@drawable/shape_btnqueding"
+            android:textSize="@dimen/sp_16"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/dp_6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:padding="@dimen/dp_12">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ninxuyao"
+            android:textSize="@dimen/sp_18"
+            android:textColor="@color/colorTextBlack"
+
+            />
+
+
+    </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:gravity="center"
+            android:padding="@dimen/dp_16"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/Chengweifangdong"
+                android:layout_height="wrap_content"
+                android:text="@string/xianzhi"
+                android:drawableTop="@mipmap/fd1"
+                />
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/gd"/>
+            <Button
+                style="@style/Chengweifangdong"
+                android:layout_height="wrap_content"
+                android:text="@string/zhuangxiusheji"
+                android:drawableTop="@mipmap/fd2"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/gd"/>
+            <Button
+                style="@style/Chengweifangdong"
+                android:layout_height="wrap_content"
+                android:text="@string/shangjiafangyuan"
+                android:drawableTop="@mipmap/fd3"
+
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/gd"/>
+            <Button
+                style="@style/Chengweifangdong"
+                android:layout_height="wrap_content"
+                android:text="@string/zhuanqushouyi"
+                android:drawableTop="@mipmap/fd4"
+                />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/dp_6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:gravity="center"
+            android:padding="@dimen/dp_12">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yunying"
+                android:textSize="@dimen/sp_18"
+                android:textColor="@color/colorTextBlack"
+
+                />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:layout_marginBottom="@dimen/dp_12"
+            android:gravity="center"
+            android:padding="@dimen/dp_16"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/Chengweifangdong"
+                android:layout_height="wrap_content"
+                android:text="@string/yunying"
+                android:drawableTop="@mipmap/fd5"
+                />
+
+            <Button
+                style="@style/Chengweifangdong"
+                android:layout_height="wrap_content"
+                android:text="@string/qudao"
+                android:drawableTop="@mipmap/fd6"
+                />
+
+            <Button
+                style="@style/Chengweifangdong"
+                android:layout_height="wrap_content"
+                android:text="@string/tiexinkefu"
+                android:drawableTop="@mipmap/fd7"
+
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -46,6 +46,7 @@ public class CountDownTextView extends AppCompatTextView {
         setText("发送中");
     }
     public void startCountTime() {
+        canGetCode = false;
         countDownTimer.start();
     }
 

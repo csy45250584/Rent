@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorShouye"
+    android:gravity="center_horizontal">
+
+    <RelativeLayout
+        android:id="@+id/title_zuqixinxi"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        >
+        <RelativeLayout
+            android:id="@+id/Realtive_zuqixinxi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dp_12">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/tc"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/zuqixinxi"
+            android:textColor="@color/colorContent"
+            android:textSize="@dimen/sp_16"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/dp_12"
+            />
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+
+        android:layout_below="@+id/title_zuqixinxi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:background="@color/colorShouye"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_marginRight="@dimen/dp_12"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:orientation="horizontal"
+            >
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/colorShouye"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:background="@color/colorShouye"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:layout_marginRight="@dimen/dp_12"
+                />
+
+            <RelativeLayout
+                android:background="@color/colorShouye"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="开始时间"
+                    android:textSize="@dimen/sp_14"
+                    android:textColor="@color/colorTextGrey"
+                    android:layout_marginTop="@dimen/dp_18"
+                    android:layout_marginBottom="@dimen/dp_12"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:background="@color/colorWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.haokuo.housemanage.houserentmanage.Utils.CheckBoxSample
+                    android:id="@+id/check_starttime"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_16"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:color_background="#FFB704"
+                    app:color_border="#C7C7C7"
+                    app:size="@dimen/dp_18"
+                    />
+
+                <TextView
+                    android:layout_toRightOf="@id/check_starttime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2018年09月3日"
+                    android:textSize="@dimen/sp_16"
+                    android:textColor="@color/colorContent"
+                    android:layout_marginTop="@dimen/dp_12"
+                    android:layout_marginBottom="@dimen/dp_12"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:background="@color/colorShouye"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*开始时间即为起租日只能为今天"
+                    android:textSize="@dimen/sp_14"
+                    android:textColor="@color/colorTextGrey"
+                    android:layout_marginTop="@dimen/dp_12"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:background="@color/colorShouye"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="结束时间"
+                    android:textSize="@dimen/sp_14"
+                    android:textColor="@color/colorTextGrey"
+                    android:layout_marginTop="@dimen/dp_18"
+                    android:layout_marginBottom="@dimen/dp_12"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:background="@color/colorWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.haokuo.housemanage.houserentmanage.Utils.CheckBoxSample
+                    android:id="@+id/check_endtime1"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_16"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:color_background="#FFB704"
+                    app:color_border="#C7C7C7"
+                    app:size="@dimen/dp_18"
+                    />
+
+                <TextView
+                    android:layout_toRightOf="@id/check_endtime1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2019年10月3日"
+                    android:textSize="@dimen/sp_16"
+                    android:textColor="@color/colorContent"
+                    android:layout_marginTop="@dimen/dp_12"
+                    android:layout_marginBottom="@dimen/dp_12"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/dp_6"
+                android:background="@color/colorWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.haokuo.housemanage.houserentmanage.Utils.CheckBoxSample
+                    android:id="@+id/check_endtime2"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_16"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:color_background="#FFB704"
+                    app:color_border="#C7C7C7"
+                    app:size="@dimen/dp_18"
+                    />
+
+                <TextView
+                    android:layout_toRightOf="@id/check_endtime2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2018年09月3日"
+                    android:textSize="@dimen/sp_16"
+                    android:textColor="@color/colorContent"
+                    android:layout_marginTop="@dimen/dp_12"
+                    android:layout_marginBottom="@dimen/dp_12"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    />
+
+            </RelativeLayout>
+
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/Ralative_xiayibu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorJuse"
+        android:layout_alignParentBottom="true"
+        >
+        <TextView
+
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/dp_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/querenfukuanfangshi"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/colorWhite"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

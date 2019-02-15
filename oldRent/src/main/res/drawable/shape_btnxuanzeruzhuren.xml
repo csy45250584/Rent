@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--填充背景色 -->
+    <solid android:color="@color/colorWhite" />     //solid  指的是背景颜色的设置
+
+    <item android:color="#F7F7F7"/>
+
+    <stroke android:width="@dimen/dp_2" android:color="@color/colorJuse"/>
+
+
+    <corners
+        android:radius="@dimen/dp_80"
+        />
+
+</shape>

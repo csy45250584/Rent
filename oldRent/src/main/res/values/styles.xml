@@ -1,0 +1,116 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="radioButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">@dimen/dp_6</item>
+        <!--<item name="android:drawablePadding">@dimen/dp_1</item>-->
+        <item name="android:drawablePadding">0dp</item>
+
+        <item name="android:textColor">@drawable/textcolor_selector_radiobutton</item>
+        <item name="android:textSize">@dimen/sp_12</item>
+
+
+
+    </style>
+
+    <style name="zzBtn">
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@color/colorTextBlack</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:drawablePadding">@dimen/dp_3</item>
+    </style>
+
+    <style name="shuaixunbtn">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:paddingLeft">@dimen/dp_16</item>
+        <item name="android:paddingRight">@dimen/dp_16</item>
+        <item name="android:drawableRight">@drawable/selector_searchedbtn</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">@dimen/dp_2</item>
+    </style>
+
+    <style name="JingpingYouzhi">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/selector_bg_jingpingyouzhi</item>
+        <item name="android:button">@null</item>
+        <item name="android:padding">@dimen/dp_6</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:textColor">@drawable/selector_textcolorjingpingyouzhi</item>
+    </style>
+
+    <style name="Checkbox">
+        <item name="android:layout_weight">1</item>
+        <item name="android:width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/selector_checkbox</item>
+        <item name="android:textColor">@drawable/selector_textcolorcheckbox</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/dp_5</item>
+        <item name="android:layout_margin">@dimen/dp_2</item>
+    </style>
+
+    <style name="Radiopaixu">
+    <item name="android:textSize">@dimen/sp_16</item>
+    <item name="android:textColor">@drawable/selector_textcolorcheckbox</item>
+    <item name="android:button">@null</item>
+    <item name="android:layout_marginTop">@dimen/dp_12</item>
+</style>
+
+    <style name="Radiobtnpaixu">
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:textColor">@drawable/selector_textcolorcheckbox</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_marginLeft">@dimen/dp_12</item>
+        <item name="android:layout_marginRight">@dimen/dp_12</item>
+    </style>
+    <style name="Fangyuanbiaoqian">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorContent</item>
+        <item name="android:padding">@dimen/dp_6</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+        <!--<item name="android:textAlignment">center</item>-->
+        
+    </style>
+    <style name="BtnPadding">
+        <item name="android:paddingTop">@dimen/dp_2</item>
+        <item name="android:paddingBottom">@dimen/dp_2</item>
+        <item name="android:paddingLeft">@dimen/dp_12</item>
+        <item name="android:paddingRight">@dimen/dp_12</item>
+
+    </style>
+    
+    <style name="btn_weizhishaixuanpaixu">
+        <item name="android:background">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:textColor">@color/colorTextBlack</item>
+        <item name="android:drawableRight">@mipmap/d_gd</item>
+    </style>
+    <style name="popup_animation">
+        <item name="android:windowEnterAnimation">@anim/popshow</item>
+        <!-- 指定显示的动画xml -->
+
+        <item name="android:windowExitAnimation">@anim/pophidden</item>
+        <!-- 指定消失的动画xml -->
+    </style>
+
+
+</resources>

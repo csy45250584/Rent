@@ -1,0 +1,18 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup_linear"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_500"
+    android:layout_gravity="bottom"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    >
+
+    <ListView
+        android:id="@+id/list_morehouse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+
+</LinearLayout>

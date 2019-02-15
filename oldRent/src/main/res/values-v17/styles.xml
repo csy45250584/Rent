@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="btn_weizhishaixuanpaixu">
+        <item name="android:background">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:textColor">@color/colorTextBlack</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:drawableRight">@mipmap/d_gd</item>
+        <item name="android:paddingRight">@dimen/dp_20</item>
+        <item name="android:paddingLeft">@dimen/dp_20</item>
+    </style>
+</resources>

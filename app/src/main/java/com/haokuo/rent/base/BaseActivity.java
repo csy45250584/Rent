@@ -13,6 +13,7 @@ import android.widget.EditText;
 import com.haokuo.midtitlebar.MidTitleBar;
 import com.haokuo.rent.R;
 import com.haokuo.rent.util.SafeHandler;
+import com.noober.background.BackgroundLibrary;
 import com.xiasuhuei321.loadingdialog.view.LoadingDialog;
 
 import org.greenrobot.eventbus.EventBus;
@@ -52,6 +53,7 @@ public abstract class BaseActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
+        BackgroundLibrary.inject(this);
         super.onCreate(savedInstanceState);
         setContentView(initContentLayout());
         ButterKnife.bind(this);
@@ -87,6 +89,9 @@ public abstract class BaseActivity extends AppCompatActivity {
             return;
         }
         setSupportActionBar(midTitleBar);
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayShowTitleEnabled(false);
+        }
         if (midTitleBar.hasBackArrow()) {
             midTitleBar.addBackArrow(this);
         }

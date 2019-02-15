@@ -1,31 +1,56 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:actionMenuTextColor">@android:color/white</item>
+        <item name="actionOverflowMenuStyle">@style/OverflowMenu</item>
+        <!--<item name="toolbarStyle">@style/MyActionBarStyle</item>-->
+        <!--<item name="toolbarNavigationButtonStyle">"@style/Widget.AppCompat.Toolbar.Button.Navigation</item>-->
     </style>
+
+    <style name="MyActionBarStyle" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="contentInsetStart">0dp</item>
+        <item name="contentInsetEnd">0dp</item>
+        <item name="contentInsetStartWithNavigation">0dp</item> 
+    </style>
+
+    <style name="OverflowMenu" parent="Widget.AppCompat.PopupMenu.Overflow">
+        <item name="overlapAnchor">false</item>  <!--设置不覆盖锚点-->
+        <item name="android:dropDownVerticalOffset">@dimen/dp_4</item>
+        <item name="android:layout_marginRight">@dimen/dp_4</item>
+    </style>
+
     <style name="MyRippleWaveStyle" parent="Material.Drawable.Ripple.Wave">
         <item name="rd_rippleAnimDuration">300</item>
         <item name="rd_rippleColor">@color/colorRipple</item>
         <item name="rd_delayClick">none</item>
     </style>
+
     <style name="MyColorRippleWaveStyle" parent="Material.Drawable.Ripple.Wave">
         <item name="rd_rippleAnimDuration">300</item>
         <item name="rd_rippleColor">@color/colorColorRipple</item>
         <item name="rd_delayClick">none</item>
     </style>
+
     <style name="CornersButtonStyle" parent="MyRippleWaveStyle">
         <item name="rd_cornerRadius">@dimen/button_corners</item>
         <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Button</item>
     </style>
+
+    <style name="CircleCornersButtonStyle" parent="MyRippleWaveStyle">
+        <item name="rd_cornerRadius">@dimen/half_button_height</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Button</item>
+    </style>
+
     <style name="NoCornerButtonStyle" parent="MyRippleWaveStyle">
         <item name="rd_cornerRadius">@dimen/dp_0</item>
         <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Button</item>
     </style>
+
     <style name="BottomSheetDialog">
         <item name="android:layout_height">wrap_content</item>
         <item name="android:windowIsFloating">false</item>
@@ -35,6 +60,7 @@
         <item name="bsd_canceledOnTouchOutside">true</item>
         <item name="bsd_dimAmount">0.5</item>
     </style>
+
     <style name="MaterialSearchViewStyle">
         <!-- Background for the search bar -->
         <item name="searchBackground">@color/colorPrimary</item>
@@ -53,5 +79,13 @@
         <!-- Hint for edit text -->
         <item name="android:hint">@string/search_hint</item>
         <item name="colorControlActivated">@color/colorWhite</item>
+    </style>
+
+    <style name="Wode">
+        <item name="android:button">@null</item>
+        <item name="android:buttonStyle">@style/Widget.AppCompat.Button.Borderless</item>
+        <item name="android:background">@color/colorWhite</item>
+        <item name="android:textColor">@color/colorText2</item>
+        <item name="android:textSize">@dimen/sp_14</item>
     </style>
 </resources>
