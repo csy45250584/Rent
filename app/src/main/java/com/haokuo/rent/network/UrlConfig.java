@@ -19,11 +19,15 @@ public class UrlConfig {
     public static final String UPDATE_PASSWORD_URL = "/user/updateUserPwd.do";
     public static final String UPDATE_USER_INFO_URL = "/user/updateUser.do";
     public static final String GET_LOGIN_CODE_URL = "/user/sendSmsByLogin.do";
-    //用户下拉数据
+    //用户-下拉数据
     public static final String GET_FEATURE_LIST_URL = "/selectData/getFeatureListIF.do";
     public static final String GET_DIST_LIST_URL = "/selectData/getDistListIF.do";
     public static final String GET_FURNITURE_LIST_URL = "/selectData/getFurnitureListIF.do";
     public static final String GET_DIST_JSON_LIST_URL = "/selectData/getDistJsonIF.do";
+    //用户-房源
+    public static final String GET_HOUSE_DETAIL_URL = "/housing/getHousingDetailIF.do";
+    public static final String GET_HOUSE_LIST_URL = "/housing/getHomeHousingIF.do";
+
 
     public static String buildImageUrl(String url) {
         return IMAGE_BASE_URL + url;

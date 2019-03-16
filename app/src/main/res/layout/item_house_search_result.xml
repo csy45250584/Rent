@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/dp_127"
+              android:background="@color/colorWhite"
+              android:orientation="horizontal"
+              android:padding="@dimen/dp_14">
+
+    <ImageView
+        android:id="@+id/iv_house_pic"
+        android:layout_width="@dimen/dp_134"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/dp_14"
+        android:src="@color/colorText2"/>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_2"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="萧山宝龙城市广场1居室"
+            android:textColor="@color/colorText1"
+            android:textSize="@dimen/text_30px"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_2"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="75m² | 2/8层"
+            android:textColor="@color/colorText3"
+            android:textSize="@dimen/text_26px"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_2"
+            android:drawableLeft="@drawable/dz"
+            android:drawablePadding="@dimen/dp_3"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="距离二号线建设一路1222米"
+            android:textColor="@color/colorText3"
+            android:textSize="@dimen/text_26px"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_3"
+            android:background="@drawable/bg_house_tip"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_6"
+            android:paddingTop="@dimen/dp_3"
+            android:paddingRight="@dimen/dp_6"
+            android:paddingBottom="@dimen/dp_3"
+            android:singleLine="true"
+            android:text="离地铁近"
+            android:textColor="@color/colorText3"
+            android:textSize="@dimen/text_26px"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_house_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_24"
+        android:singleLine="true"
+        android:layout_gravity="right"
+        android:text="8231/月"
+        android:textColor="#FF8800"
+        android:textSize="@dimen/text_34px"/>
+</FrameLayout>
+</LinearLayout>

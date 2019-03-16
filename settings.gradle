@@ -1,1 +1,1 @@
-include ':app', 'MidTitleBar', 'sample', 'library', ':wheelview', ':pickerview', ':oldRent'
+include ':app', 'MidTitleBar', 'sample', 'library', ':wheelview', ':pickerview'

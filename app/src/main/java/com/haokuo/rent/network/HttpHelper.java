@@ -7,6 +7,8 @@ import android.util.Log;
 
 import com.alibaba.fastjson.JSON;
 import com.haokuo.rent.bean.SuccessBean;
+import com.haokuo.rent.network.params.GetHouseDetailParams;
+import com.haokuo.rent.network.params.GetHouseListParams;
 import com.haokuo.rent.network.params.LoginByPasswordParams;
 import com.haokuo.rent.network.params.LoginByTelParams;
 import com.haokuo.rent.network.params.RegisterByTelParams;
@@ -295,5 +297,25 @@ public class HttpHelper {
     /** 获取用户信息 **/
     public void getUserInfo(NetworkCallback callback) {
         doPost(null, UrlConfig.GET_USER_INFO_URL, callback);
+    }
+
+    /** 获取房屋特色 **/
+    public void getFeatureList(NetworkCallback callback) {
+        doPost(null, UrlConfig.GET_FEATURE_LIST_URL, callback);
+    }
+
+    /** 获取房屋家具 **/
+    public void getFurnitureList(NetworkCallback callback) {
+        doPost(null, UrlConfig.GET_FURNITURE_LIST_URL, callback);
+    }
+
+    /** 获取房源列表 (同用户 - 首页) **/
+    public void getHouseList(GetHouseListParams params, NetworkCallback callback) {
+        doPost(params, UrlConfig.GET_HOUSE_LIST_URL, callback);
+    }
+
+    /** 获取房源详情 **/
+    public void getHouseDetail(GetHouseDetailParams params, NetworkCallback callback) {
+        doPost(params, UrlConfig.GET_HOUSE_DETAIL_URL, callback);
     }
 }

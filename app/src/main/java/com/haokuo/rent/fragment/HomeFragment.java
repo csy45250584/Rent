@@ -9,6 +9,7 @@ import android.widget.LinearLayout;
 
 import com.haokuo.rent.R;
 import com.haokuo.rent.activity.HotelListActivity;
+import com.haokuo.rent.activity.SearchHouseListActivity;
 import com.haokuo.rent.adapter.HomeHouseAdapter;
 import com.haokuo.rent.base.BaseLazyLoadFragment;
 import com.haokuo.rent.util.GlideImageLoader;
@@ -102,6 +103,7 @@ public class HomeFragment extends BaseLazyLoadFragment {
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.ll_selected:
+                startActivity(new Intent(mContext,SearchHouseListActivity.class));
                 break;
             case R.id.ll_entire_rent:
                 break;

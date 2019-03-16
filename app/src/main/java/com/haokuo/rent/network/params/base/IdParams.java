@@ -7,9 +7,9 @@ import lombok.Data;
  */
 @Data
 public class IdParams extends UserIdTokenParams {
-    private long id;
+    private Long id;
 
-    public IdParams(long id) {
+    public IdParams(Long id) {
         super();
         this.id = id;
     }
